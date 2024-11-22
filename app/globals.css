@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-width: 48px;
+  --sidebar-icon-color: #6b7280;
+  --sidebar-hover-bg: #f3f4f6;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+.sidebar-icon {
+  @apply w-6 h-6 text-gray-500 hover:text-gray-700 transition-colors;
+}
+
+.upload-card {
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+  background: white;
+  width: 400px;
+}
